@@ -82,23 +82,6 @@ sudo systemctl enable --now robot_status.timer
 
 ```
 
-## 5. Configure Tmux
-
-Update your `~/.tmux.conf` to display the status data from the temporary file.
-
-```tmux
-# Refresh interval for the status bar
-set -g status-interval 5
-
-# Status bar right-side configuration
-set -g status-right-length 90
-set -g status-right "#(cat /tmp/robot_status 2>/dev/null || echo 'Connecting...') | %H:%M "
-
-```
-
-Reload the configuration within tmux:
-`tmux source-file ~/.tmux.conf`
-
 ## 6. Debugging
 
 Use these commands to verify that the background process is running correctly:
