@@ -4,10 +4,6 @@
 TIMEOUT="8s"
 STATUS_FILE="/tmp/robot_status"
 
-# !!! IMPORTANT: Match this to your ROS environment !!!
-export ROS_DOMAIN_ID=0 
-export PYTHONUNBUFFERED=1
-
 # 1. Load ROS 2 Environment
 if [ -f "/opt/ros/jazzy/setup.bash" ]; then
     source /opt/ros/jazzy/setup.bash
