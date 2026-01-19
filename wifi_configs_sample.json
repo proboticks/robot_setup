@@ -1,0 +1,26 @@
+{
+    "profiles": [
+        {
+            "name": "Lab_Network",
+            "ssid": "Clearpath_Lab",
+            "password": "robotics_rule",
+            "mode": "Client",
+            "dhcp": true,
+            "ip": "192.168.0.50/24"
+        },
+        {
+            "name": "Uni_WiFi",
+            "ssid": "asu",
+            "identity": "your_username",
+            "password": "your_password",
+            "auth_type": "enterprise",
+            "mode": "Client",
+            "dhcp": true
+        }
+    ],
+    "ap_settings": {
+        "ssid": "TurtleBot_AP_",
+        "password": "turtlebot",
+        "band": "2.4GHz"
+    }
+}

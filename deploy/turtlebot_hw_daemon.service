@@ -1,0 +1,15 @@
+[Unit]
+Description=TurtleBot 4 Jazzy Startup Notification and HW Button Monitor
+# Wait for network and the robot base driver
+After=network-online.target robot.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+ExecStart=/etc/turtlebot4/robot_hw_daemon.sh
+Restart=on-failure
+RestartSec=20
+
+[Install]
+WantedBy=multi-user.target
